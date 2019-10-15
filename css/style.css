@@ -85,10 +85,10 @@ html {
 
 .greetings-block-content h1 {
 	padding-top: 150px;
-	font-size: 30px;	
+	font-size: 30px;
 }
 
-.greetings-block-content h1 span {	
+.greetings-block-content h1 span {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -341,7 +341,7 @@ html {
 	height: 660px;
 }
 
-.comment-block-content h2 {	
+.comment-block-content h2 {
 	text-align: center;
 	padding: 100px 0 90px 0;
 	font-size: 30px;
@@ -356,7 +356,7 @@ html {
 	grid-gap: 30px;
 }
 
-.comment-block-list li {	
+.comment-block-list li {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 16px;
@@ -441,133 +441,137 @@ html {
 	margin-right: 20px;
 }
 
-.rate-block{
+.rate-block {
 	background: #f5f5f5;
 	height: 1320px;
 }
 
-.rate-block-content h1{
+.rate-block-content h1 {
 	padding-top: 90px;
 }
 
-.rate-block-content h2{
+.rate-block-content h2 {
 	padding: 50px 0 55px 0;
 }
 
-.choose-rate{		
+.choose-rate {
 	display: flex;
 	justify-content: space-between;
 }
 
-.choose-rate p:nth-child(2){
+.choose-rate p:nth-child(2) {
 	font-weight: bold;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
-.choose-rate p:nth-child(2) a{
+.choose-rate p:nth-child(2) a {
 	color: #e42626;
 	border: 2px solid #e42626;
 	padding: 4px 15px;
 	margin-left: 20px;
 	border-radius: 5px;
 }
-.rate-table{
+
+.rate-table {
 	padding-top: 40px;
 }
 
-.rate-table{
+.rate-table {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 3px;
 }
 
-.rate-element{
-	background: #fff;	
+.rate-element {
+	background: #fff;
 	text-align: center;
 	height: 915px;
 }
 
-.rate-element>p{
+.rate-element>p {
 	font-size: 20px;
 	padding: 0 0 30px 0;
 	margin-top: 50px;
 }
 
-.rate-element span{
+.rate-element span {
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.rate-element .rate-services{
-	padding: 30px 20px 150px 20px;		
+.rate-element .rate-services {
+	padding: 30px 20px 150px 20px;
 }
 
-.rate-element:nth-child(2)  .rate-services{
-	padding: 30px 20px 107px 20px;		
+.rate-element:nth-child(2) .rate-services {
+	padding: 30px 20px 107px 20px;
 }
 
-.rate-element:nth-child(3)  .rate-services{
-	padding: 30px 20px 19px 20px;		
+.rate-element:nth-child(3) .rate-services {
+	padding: 30px 20px 19px 20px;
 }
 
-.rate-table .rate-services div{
+.rate-table .rate-services div {
 	font-size: 11px;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	padding: 15px 0;
 	border-top: 1px solid #f5f5f5;
-	
+
 }
 
-.rate-table .rate-services div:last-child{
+.rate-table .rate-services div:last-child {
 	border-bottom: 1px solid #f5f5f5;
 }
 
-.rate-table .rate-services div p:nth-child(2){
+.rate-table .rate-services div p:nth-child(2) {
 	font-weight: bold;
 }
 
-.rate-element .buy  p{
+.rate-element .buy p {
 	font-size: 15px;
 	padding-bottom: 30px;
 }
-.rate-element .buy  p span{
+
+.rate-element .buy p span {
 	font-weight: bold;
 	font-size: 25px;
 	color: #262626;
- }
+}
 
-.buy{
+.buy {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
- .rate-consult {
+.rate-consult {
 	color: #fff;
 	background: #ff3306;
-	padding: 20px 45px;		
+	padding: 20px 45px;
 	border-radius: 7px;
 	font-weight: bold;
- }
- .rate-element:nth-child(2) .rate-consult{
-	background: #009d00;
- }
+}
 
- 
- .rate-element:nth-child(3) .rate-consult{
+.rate-element:nth-child(2) .rate-consult {
+	background: #009d00;
+}
+
+
+.rate-element:nth-child(3) .rate-consult {
 	background: #013083;
- }
- .rate-buy{
-	padding: 20px 45px;	
+}
+
+.rate-buy {
+	padding: 20px 45px;
 	background: #9a9a9a;
 	color: #fff;
 	border-radius: 7px;
-	font-weight: bold;	
- }
+	font-weight: bold;
+}
 
 
- .contact-block{
+.contact-block {
 	height: 630px;
 	background: #f5f5f5;
 	display: grid;
@@ -576,32 +580,37 @@ html {
 }
 
 
-.contact-block div:nth-child(3),.contact-block div:nth-child(4){
+.contact-block div:nth-child(3),
+.contact-block div:nth-child(4) {
 	background: #fff;
 }
 
-.ask-block{
+.ask-block {
 	padding: 75px 50px 0 0;
 }
 
-.ask-form{
+.ask-form {
 	padding-top: 30px;
 }
 
-.ask-form input{
-	width: 320px;
-	height: 50px;
+.ask-form input, textarea {
+	font-size: 22px;
+	padding: 5px 5px 0 10px;
+	width: 305px;
+	height: 45px;
 	margin: 10px 0 16px 0;
 	border: 1px solid #dddddd;
 	border-radius: 5px;
 }
-
-.ask-form input[type=textarea]{
+.ask-form textarea {
 	height: 80px;
+	font-size: 16px;
 }
 
-.ask-form input[type=submit]{
+.ask-form input[type=submit] {
 	height: 65px;
+	width: 320px;
+	padding: 0;
 	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
@@ -609,42 +618,43 @@ html {
 	margin-bottom: 15px;
 }
 
-.ask-form p:last-child{
+.ask-form p:last-child {
 	text-align: center;
 	color: #242424;
 	font-size: 14px;
 }
 
-.contacts{
+.contacts {
 	padding: 100px 0 0 165px;
 	color: #262626;
 }
-.contacts h1{
+
+.contacts h1 {
 	color: #000;
 }
 
-.contacts div:not(:first-child){
+.contacts div:not(:first-child) {
 	padding-top: 30px;
 }
-.contacts-first-div{
-	padding-top: 80px!important;
+
+.contacts-first-div {
+	padding-top: 80px !important;
 }
 
-.contacts div p:first-child{
+.contacts div p:first-child {
 	padding-bottom: 15px;
 }
 
-.contacts .email p:nth-child(2){
+.contacts .email p:nth-child(2) {
 	text-decoration: underline;
 	font-weight: bold;
 	font-size: 14px;
 }
 
-.contact-font{
+.contact-font {
 	font-size: 16px;
 	font-weight: 600;
 }
-
 
 /* FOOTER */
 footer {
@@ -659,7 +669,6 @@ footer {
 	align-items: center;
 }
 
-
 .footer-block div:last-child {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -672,7 +681,6 @@ footer {
 	color: #fff;
 	justify-self: end;
 }
-
 
 .footer-block div:last-child img {
 	justify-self: start;
