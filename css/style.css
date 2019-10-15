@@ -3,11 +3,19 @@ html {
 	font-family: 'Roboto', sans-serif;
 	color: #313131;
 }
-
 .container {
 	width: 50%;
 	margin: 0 auto;
 }
+
+header{
+	position:relative;
+}
+menu{
+	position: fixed;
+	width: 100vw;
+	background: #fff;
+}	
 
 .menu-list {
 	display: grid;
@@ -41,6 +49,9 @@ html {
 	justify-self: end;
 }
 
+nav{
+	padding-top: 51px;
+}
 .nav-list {
 	height: 80px;
 	display: grid;
@@ -76,6 +87,7 @@ html {
 .greetings-block {
 	height: 610px;
 	background: url(../img/block1-bg.png);
+	
 }
 
 .greetings-block-content {
