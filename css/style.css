@@ -360,12 +360,12 @@ nav{
 }
 
 
-.comment-block-list {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	justify-items: center;
+.comment-block-list {	
+	padding: 0 100px 80px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
-	grid-gap: 30px;
 }
 
 .comment-block-list li {
@@ -379,6 +379,29 @@ nav{
 .comment-block-list li:hover {
 	color: #e42626;
 }
+
+.comment-lists {
+	position: relative;
+}
+.comment-list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+	justify-items: center;
+	align-items: start;
+	grid-gap: 10px;
+	font-size: 14px;
+}
+
+.comment-list img{
+	padding-bottom: 20px;
+}
+
+.comment-list div p:hover{
+	text-decoration: underline;
+	color: #e42626;
+}
+
 
 
 .partners-block {
@@ -403,6 +426,7 @@ nav{
 .partner-list a {
 	height: 200px;
 }
+
 
 .partner-list a p {
 	width: 200px;
@@ -438,10 +462,12 @@ nav{
 .fa:before {
 	font-size: 20px;
 	color: #9D9D9D;
+	transition: .2s;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-75%);
 }
+
 
 .bx-prev .fa:before {
 	left: -80px;
@@ -451,6 +477,11 @@ nav{
 .bx-next .fa:before {
 	right: -80px;
 	margin-right: 20px;
+}
+
+.fa:hover:before{
+	color: #e42626;
+	transition: .2s;
 }
 
 .rate-block {
