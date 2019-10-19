@@ -728,3 +728,103 @@ footer {
 .footer-block div:last-child img {
 	justify-self: start;
 }
+
+
+/*POPUP*/
+.popup-fast {
+	width: 320px;
+	height: 300px;
+	background: #F6F6F6;
+	z-index: -1;	
+	position: fixed;
+	top: 30vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;	
+	border-radius: 5px;		
+	opacity: 0;
+	transition: .5s;
+}
+
+.popup-fast.active {
+	z-index: 2;	
+	opacity: 1;	
+	transition: .5s;
+}
+
+.popup-fast div {
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+} 
+
+.popup-fast h3 {
+	font-size: 25px;	
+	text-align: center;
+	color: #656565;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+.popup-fast form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+.popup-fast input[type=text] {	
+	height: 50px;
+	width: 250px;
+	border: 2px solid #000;	
+	transition: .5s;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.popup-fast input[type=text]:focus {	
+	box-shadow: 0 0 1px 1px  #c91111;
+}
+
+
+.popup-fast button {
+	width: 200px;
+	height: 60px;
+	border: 2px solid #c91111;
+	background:  #c91111;
+	color: #fff;
+	padding: 15px;	
+	border-radius: 5px;
+	font-size: 20px;	
+	transition: .5s;
+}
+
+.popup-fast button:hover {
+	border: 2px solid  #c91111;
+	background:#fff;
+	color:   #c91111;
+}
+
+.input-name {
+	padding-left: 20px;	
+}
+
+.bg-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background: rgba(0,0,0,.7);
+	opacity: 0;	
+	transition: .5s;
+}
+
+.bg-popup.active {	
+	opacity: 1;
+	transition: .5s;
+	z-index: 0;
+}
+/*POPUP*/

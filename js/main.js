@@ -27,3 +27,17 @@ partnerBlock.forEach((item) => {
     img.style.display = 'block';   
   });
 });
+
+document.querySelector('#call-me-btn').addEventListener('click', togglePopUp);
+
+document.querySelector('.bg-popup').addEventListener('click', togglePopUp);
+document.querySelector('.submit-button').addEventListener('click', togglePopUp);
+
+
+function togglePopUp() {
+  document.querySelector('.popup-fast').classList.toggle('active');
+  document.querySelector('.bg-popup').classList.toggle('active');  
+
+}
+
+
