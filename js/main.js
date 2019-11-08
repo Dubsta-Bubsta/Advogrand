@@ -10,8 +10,6 @@
     });
 }
 
-
-
 {
     //Showing logo descripting on hover
     let partnerBlock = document.querySelectorAll('.partner-list a');
@@ -59,15 +57,15 @@
                 }
             }
 
-            let step = activeItem.getAttribute('data-id') - item.getAttribute('data-id');
-
+            let step = activeItem.getAttribute('data-id') - item.getAttribute('data-id');           
+            
             if (step < 0) {
                 for (let i = 0; i < Math.abs(step); i++) {
-                    $('.comment-lists .fa-arrow-right').trigger('click');
+                    $('.comment-lists .fa-arrow-right').click();
                 }
-            } else {
-                for (let i = 0; i < Math.abs(step); i++) {
-                    $('.comment-lists .fa-arrow-left').trigger('click');
+            } else {                
+                for (let i = 0; i < Math.abs(step); i++) {                   
+                    $('.comment-lists .fa-arrow-left').click();                    
                 }
             }
         });
@@ -86,8 +84,6 @@
             else
                 activeItem.nextElementSibling.classList.add('active');
         });
-
-
 
         document.querySelector('.comment-lists .fa-arrow-left').addEventListener('click', function () {
             let activeItem = document.querySelector('.comment-block-list li.active');
