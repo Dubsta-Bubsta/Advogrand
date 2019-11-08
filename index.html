@@ -50,12 +50,12 @@
 	<!-- POPUP -->
 	<div class="popup-fast">
 		<div>
-			<h3>Позвоните мне</h3>	
+			<h3>Позвоните мне</h3>
 			<form class="form">
-				<input type="text" class = "input-name"  placeholder="Ваше имя" >
-				<input type="text" class = "input-name" placeholder="Ваш телефон">
-				<button type="submit" class = "submit-button">Отправить заявку</button>
-			</form>		
+				<input type="text" class="input-name" placeholder="Ваше имя">
+				<input type="text" class="input-name" placeholder="Ваш телефон">
+				<button type="submit" class="submit-button">Отправить заявку</button>
+			</form>
 		</div>
 	</div>
 	<div class="bg-popup"></div>
@@ -237,49 +237,109 @@
 				<div class="comment-block-content">
 					<h2>Отзывы</h2>
 					<ul class='comment-block-list'>
-						<li class = "active">Здравоохранение</li>
-						<li>Бизнес</li>
-						<li>Семья</li>
-						<li>Жкх</li>
-						<li>Недвижимость</li>
-						<li>Все</li>
+						<li class="active" data-id="1">Здравоохранение</li>
+						<li data-id="2">Бизнес</li>
+						<li data-id="3">Семья</li>
+						<li data-id="4">Жкх</li>
+						<li data-id="5">Недвижимость</li>
+						<li data-id="6">Все</li>
 					</ul>
 
 					<div class="comment-lists">
 						<div class="slider">
-							<div class = "comment-list">
+							<div class="comment-list" data-comment-id="1">
 								<div>
 									<img src="./img/comment-video-1.png" alt="comment-video">
 									<p>Длинное название видеоролика в две строки просто длинное</p>
 								</div>
 								<div>
 									<img src="./img/comment-video-2.png" alt="comment-video">
-									<p>Название видеоролика</p>
+									<p>Здравоохранение</p>
 								</div>
 								<div>
 									<img src="./img/comment-video-3.png" alt="comment-video">
 									<p>Длинное название видеоролика в две строки просто длинное</p>
 								</div>
-							</div>	
+							</div>
 
+							<div class="comment-list" data-comment-id="2">
+								<div>
+									<img src="./img/comment-video-1.png" alt="comment-video">
+									<p>БДлинное название видеоролика в две строки просто длинное</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-2.png" alt="comment-video">
+									<p>Бизнес</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-3.png" alt="comment-video">
+									<p>Длинное название видеоролика в две строки просто длинное</p>
+								</div>
+							</div>
 
-							<div class = "comment-list">
+							<div class="comment-list" data-comment-id="1">
 								<div>
 									<img src="./img/comment-video-1.png" alt="comment-video">
 									<p>Длинное название видеоролика в две строки просто длинное</p>
 								</div>
 								<div>
 									<img src="./img/comment-video-2.png" alt="comment-video">
-									<p>Название видеоролика</p>
+									<p>Семья</p>
 								</div>
 								<div>
 									<img src="./img/comment-video-3.png" alt="comment-video">
 									<p>Длинное название видеоролика в две строки просто длинное</p>
 								</div>
-							</div>	
+							</div>
+
+							<div class="comment-list" data-comment-id="1">
+								<div>
+									<img src="./img/comment-video-1.png" alt="comment-video">
+									<p>ЗДлинное название видеоролика в две строки просто длинное</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-2.png" alt="comment-video">
+									<p>Жкх</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-3.png" alt="comment-video">
+									<p>Длинное название видеоролика в две строки просто длинное</p>
+								</div>
+							</div>
+
+							<div class="comment-list" data-comment-id="1">
+								<div>
+									<img src="./img/comment-video-1.png" alt="comment-video">
+									<p>ЗДлинное название видеоролика в две строки просто длинное</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-2.png" alt="comment-video">
+									<p>Недвижимость</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-3.png" alt="comment-video">
+									<p>Длинное название видеоролика в две строки просто длинное</p>
+								</div>
+							</div>
+
+							<div class="comment-list" data-comment-id="1">
+								<div>
+									<img src="./img/comment-video-1.png" alt="comment-video">
+									<p>ЗДлинное название видеоролика в две строки просто длинное</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-2.png" alt="comment-video">
+									<p>Все</p>
+								</div>
+								<div>
+									<img src="./img/comment-video-3.png" alt="comment-video">
+									<p>Длинное название видеоролика в две строки просто длинное</p>
+								</div>
+							</div>
+
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -486,7 +546,7 @@
 			<div></div>
 			<div class="ask-block">
 				<h3>Напишите нам письмо или задайте свой вопрос</h3>
-				<form action="#" class = "ask-form">
+				<form action="#" class="ask-form">
 					<p>Введите свое имя</p>
 					<input type="text">
 					<p>Ваш номер телефона</p>
@@ -494,26 +554,27 @@
 					<p>Сообщение или вопрос</p>
 					<!-- <input type="textarea">					 -->
 					<textarea name="" id="textarea" cols="30" rows="10"></textarea>
-					<input type="submit" value = "Заказать звонок консультанта">
+					<input type="submit" value="Заказать звонок консультанта">
 					<p>Перезвоним в течение 5 минут</p>
 				</form>
 			</div>
 			<div class="contacts">
 				<h1>Контакты</h1>
-				<div class = "contacts-first-div">
+				<div class="contacts-first-div">
 					<p>Телефон для покупки карт:</p>
 					<h3>+7 499 322-85-80</h3>
 				</div>
-				<div class = "email">
+				<div class="email">
 					<p>Email:</p>
 					<p>info@advogrand.net</p>
 				</div>
 				<div>
 					<p>Время работы:</p>
-					<p class = "contact-font">С понедельника по пятницу: <br>9:00 - 22:00</p>
+					<p class="contact-font">С понедельника по пятницу: <br>9:00 - 22:00</p>
 				</div>
 				<div>
-					<p class = "contact-font">В праздничные и выходные дни: <br> только телефонные консультации <br>10:00 - 20:00</p>
+					<p class="contact-font">В праздничные и выходные дни: <br> только телефонные консультации <br>10:00
+						- 20:00</p>
 				</div>
 			</div>
 			<div></div>
@@ -521,7 +582,7 @@
 
 
 
-		
+
 	</main>
 
 	<footer>
@@ -533,7 +594,7 @@
 		</div>
 	</footer>
 
-	
+
 </body>
 
 </html>

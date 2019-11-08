@@ -374,7 +374,14 @@ nav{
 	font-weight: bold;
 	font-size: 16px;
 	cursor: pointer;
+	padding: 10px;
 	transition: .2s;
+}
+
+.comment-block-list li.active {
+	border: 2px solid #e42626;
+	border-radius: 7px;
+	
 }
 
 .comment-block-list li:hover {
