@@ -59,15 +59,19 @@
 
             let step = activeItem.getAttribute('data-id') - item.getAttribute('data-id');           
             
-            if (step < 0) {
-                for (let i = 0; i < Math.abs(step); i++) {
+            let stepCounter = 0;
+            let timerInterval;
+            timerInterval = setInterval(function () {
+                if (step < 0)
                     $('.comment-lists .fa-arrow-right').click();
-                }
-            } else {                
-                for (let i = 0; i < Math.abs(step); i++) {                   
-                    $('.comment-lists .fa-arrow-left').click();                    
-                }
-            }
+                else
+                    $('.comment-lists .fa-arrow-left').click();
+
+                stepCounter++;
+                if (stepCounter == Math.abs(step))
+                    clearInterval(timerInterval);
+            }, 520);
+
         });
     })
 
